@@ -1,6 +1,7 @@
 [package]
+authors = ["Josh Leverette <josh.leverette@utiliflex.com>"]
 name = "utime"
 version = "0.1.0"
-authors = ["Josh Leverette <josh.leverette@utiliflex.com>"]
 
 [dependencies]
+criterion = "0.1.0"
