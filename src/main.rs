@@ -13,7 +13,7 @@ fn main() {
 
     Criterion::default()
         .bench_function(&args[0], |b| b.iter(|| {
-            let _ = Command::new(&args[0]).args(&args[1..]).status();
+            Command::new(&args[0]).args(&args[1..]).status().unwrap();
         }));
 
     let _ = fs::remove_dir_all(".criterion");
