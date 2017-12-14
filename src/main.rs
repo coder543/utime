@@ -1,4 +1,5 @@
 use std::process::Command;
+use std::fs;
 use std::env;
 
 extern crate criterion;
@@ -14,4 +15,6 @@ fn main() {
         .bench_function(&args[0], |b| b.iter(|| {
             let _ = Command::new(&args[0]).args(&args[1..]).status();
         }));
+
+    let _ = fs::remove_dir_all(".criterion");
 }
