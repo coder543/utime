@@ -4,4 +4,4 @@ name = "utime"
 version = "0.1.0"
 
 [dependencies]
-criterion = "0.1.0"
+criterion = "0.2.3"

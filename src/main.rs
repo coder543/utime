@@ -12,7 +12,7 @@ fn main() {
     }
 
     Criterion::default()
-        .bench_function(&args[0], |b| b.iter(|| {
+        .bench_function(&args[0].clone(), move |b| b.iter(|| {
             Command::new(&args[0]).args(&args[1..]).status().unwrap();
         }));
 
