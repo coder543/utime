@@ -17,4 +17,5 @@ fn main() {
         }));
 
     let _ = fs::remove_dir_all("target/criterion");
+    let _ = fs::remove_dir("target");
 }
