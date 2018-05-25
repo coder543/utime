@@ -16,5 +16,5 @@ fn main() {
             Command::new(&args[0]).args(&args[1..]).status().unwrap();
         }));
 
-    let _ = fs::remove_dir_all(".criterion");
+    let _ = fs::remove_dir_all("target/criterion");
 }
